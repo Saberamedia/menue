@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Konsole</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Admin-Konsole</h1>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Aktion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Daten werden hier dynamisch hinzugefügt -->
+        </tbody>
+    </table>
+    <div id="update-form">
+        <h2>Daten aktualisieren</h2>
+        <input type="hidden" id="update-id">
+        <label for="update-name">Name:</label>
+        <input type="text" id="update-name" required>
+        <button onclick="updateData()">Aktualisieren</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
